@@ -4,5 +4,5 @@
     Property strTekst As String     'kasutaja sisestatud teksti jaoks
 
     Function pooraTekst() As String     'liidese meetodid koodi
-    Sub teisendaTekst(ByRef strSisendTekst As String)       'ei oma ii-i-i--i
+    Sub teisendaTekst(ByRef strSisendTekst As String)       'ei oma
 End Interface
