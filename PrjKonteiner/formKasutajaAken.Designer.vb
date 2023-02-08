@@ -32,6 +32,9 @@ Partial Class formKasutajaAken
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnPoora1 = New System.Windows.Forms.Button()
         Me.btnPoora2 = New System.Windows.Forms.Button()
+        Me.btnStart = New System.Windows.Forms.Button()
+        Me.btnStopp = New System.Windows.Forms.Button()
+        Me.timerUuenda = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'ContextMenuStrip1
@@ -106,11 +109,35 @@ Partial Class formKasutajaAken
         Me.btnPoora2.Text = "Pööra protseduuriga"
         Me.btnPoora2.UseVisualStyleBackColor = True
         '
+        'btnStart
+        '
+        Me.btnStart.Location = New System.Drawing.Point(735, 119)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(123, 59)
+        Me.btnStart.TabIndex = 10
+        Me.btnStart.Text = "Start"
+        Me.btnStart.UseVisualStyleBackColor = True
+        '
+        'btnStopp
+        '
+        Me.btnStopp.Location = New System.Drawing.Point(728, 492)
+        Me.btnStopp.Name = "btnStopp"
+        Me.btnStopp.Size = New System.Drawing.Size(130, 66)
+        Me.btnStopp.TabIndex = 11
+        Me.btnStopp.Text = "Stop"
+        Me.btnStopp.UseVisualStyleBackColor = True
+        '
+        'timerUuenda
+        '
+        Me.timerUuenda.Interval = 5000
+        '
         'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(961, 648)
+        Me.Controls.Add(Me.btnStopp)
+        Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.btnPoora2)
         Me.Controls.Add(Me.btnPoora1)
         Me.Controls.Add(Me.Label3)
@@ -135,4 +162,7 @@ Partial Class formKasutajaAken
     Friend WithEvents Label3 As Label
     Friend WithEvents btnPoora1 As Button
     Friend WithEvents btnPoora2 As Button
+    Friend WithEvents btnStart As Button
+    Friend WithEvents btnStopp As Button
+    Friend WithEvents timerUuenda As Timer
 End Class
