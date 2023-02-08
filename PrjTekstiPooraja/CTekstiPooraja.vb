@@ -1,6 +1,11 @@
 ﻿Public Class CTekstiPooraja
     Implements ITeisendused
 
+    'Klassi CTekstiPooraja atribuudid (muutujad)
+    Private intAlgusSymbol As Integer
+    Private intLoppSymbol As Integer
+    Private strPooratavTekst As String
+
     Private Property intAlgus As Integer Implements ITeisendused.intAlgus
         Get
             Throw New NotImplementedException()
