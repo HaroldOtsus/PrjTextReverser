@@ -1,7 +1,10 @@
 ﻿Public Class CAlgoritmilinePooraja
     Implements ITeisendused
 
-    Public Property intAlgus As Integer Implements ITeisendused.intAlgus
+    'Klassi CAlgoritmilinePooraja atribuudid (muutujad)
+    Private strPooratavTekst As String
+
+    Private Property intAlgus As Integer Implements ITeisendused.intAlgus
         Get
             Throw New NotImplementedException()
         End Get
@@ -10,7 +13,7 @@
         End Set
     End Property
 
-    Public Property intLopp As Integer Implements ITeisendused.intLopp
+    Private Property intLopp As Integer Implements ITeisendused.intLopp
         Get
             Throw New NotImplementedException()
         End Get
@@ -19,24 +22,36 @@
         End Set
     End Property
 
-    Public Property strTekst As String Implements ITeisendused.strTekst
+    Private Property strTekst As String Implements ITeisendused.strTekst
         Get
-            Throw New NotImplementedException()
+            Return strPooratavTekst     'atribuudi küsimisel tagasta strPooratavTekst
         End Get
         Set(value As String)
-            Throw New NotImplementedException()
+            strPooratavTekst = value    'atribuudi v22rtuse seadistamine
         End Set
     End Property
 
-    Public Sub teisendaTekst(ByRef strSisendTekst As String) Implements ITeisendused.teisendaTekst
-        Throw New NotImplementedException()
+    Private Sub teisendaTekst(ByRef strSisendTekst As String) Implements ITeisendused.teisendaTekst
+
     End Sub
 
-    Public Function pooraTekst() As String Implements ITeisendused.pooraTekst
-        Throw New NotImplementedException()
+    Private Function pooraTekst() As String Implements ITeisendused.pooraTekst
+        'Karakterite massiiv sisend teksti pikkusega
+        Dim arrPooratud(Len(strPooratavTekst) - 1) As Char
+        Dim j As Integer = 0
+
+        'tsükkel, mis paigutab sisendi viimase t2he karakterite massiivi algusesse jne
+        For i As Integer = Len(strPooratavTekst) - 1 To 0 Step -1
+            arrPooratud(j) = strPooratavTekst(i)
+            j += 1
+        Next
+
+        'muudame karakterite massiivi stringiks
+        Dim strPooratud As String = CStr(arrPooratud)
+        Return strPooratud
     End Function
 
-    Public Function loeT2ish22likud(strSisendTekst As String) As Integer Implements ITeisendused.loeT2ish22likud
-        Throw New NotImplementedException()
+    Private Function loeT2ish22likud(strSisendTekst As String) As Integer Implements ITeisendused.loeT2ish22likud
+
     End Function
 End Class
