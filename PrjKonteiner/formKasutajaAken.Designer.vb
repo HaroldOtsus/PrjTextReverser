@@ -107,7 +107,7 @@ Partial Class formKasutajaAken
         Me.btnPoora1.Location = New System.Drawing.Point(240, 243)
         Me.btnPoora1.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPoora1.Name = "btnPoora1"
-        Me.btnPoora1.Size = New System.Drawing.Size(149, 18)
+        Me.btnPoora1.Size = New System.Drawing.Size(151, 32)
         Me.btnPoora1.TabIndex = 8
         Me.btnPoora1.Text = "Pööra funktsiooniga"
         Me.btnPoora1.UseVisualStyleBackColor = True
@@ -117,7 +117,7 @@ Partial Class formKasutajaAken
         Me.btnPoora2.Location = New System.Drawing.Point(240, 345)
         Me.btnPoora2.Margin = New System.Windows.Forms.Padding(2)
         Me.btnPoora2.Name = "btnPoora2"
-        Me.btnPoora2.Size = New System.Drawing.Size(149, 18)
+        Me.btnPoora2.Size = New System.Drawing.Size(151, 36)
         Me.btnPoora2.TabIndex = 9
         Me.btnPoora2.Text = "Pööra protseduuriga"
         Me.btnPoora2.UseVisualStyleBackColor = True
@@ -175,6 +175,7 @@ Partial Class formKasutajaAken
         'tekstiPoorajaRadio
         '
         Me.tekstiPoorajaRadio.AutoSize = True
+        Me.tekstiPoorajaRadio.Checked = True
         Me.tekstiPoorajaRadio.Location = New System.Drawing.Point(313, 5)
         Me.tekstiPoorajaRadio.Name = "tekstiPoorajaRadio"
         Me.tekstiPoorajaRadio.Size = New System.Drawing.Size(93, 17)
@@ -190,7 +191,6 @@ Partial Class formKasutajaAken
         Me.algoPoorajaRadio.Name = "algoPoorajaRadio"
         Me.algoPoorajaRadio.Size = New System.Drawing.Size(119, 17)
         Me.algoPoorajaRadio.TabIndex = 16
-        Me.algoPoorajaRadio.TabStop = True
         Me.algoPoorajaRadio.Text = "Algoritmiline Pööraja"
         Me.algoPoorajaRadio.UseVisualStyleBackColor = True
         '

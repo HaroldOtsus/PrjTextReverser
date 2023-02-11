@@ -3,7 +3,11 @@
         'Objekti loomine liidese baasil; referentsmuutuja pooraja deklaratsioon
         Dim pooraja As PrjTekstiPooraja.ITeisendused
         'Seadistame referentsmuutuja viitama uuele objektile
-        pooraja = New PrjTekstiPooraja.CTekstiPooraja
+        If tekstiPoorajaRadio.Checked = True Then
+            pooraja = New PrjTekstiPooraja.CTekstiPooraja
+        ElseIf algoPoorajaRadio.Checked = True Then
+            pooraja = New PrjTekstiPooraja.CAlgoritmilinePooraja
+        End If
 
         'Teostame teksti p66ramise kasutades parametriseerimata funktsiooni pooraTekst
         'ning liidese atribuuti strTekst
