@@ -55,6 +55,14 @@
         'vajutus nupul btnStopp l6litab taimeri timerUuenda v2lja
         timerUuenda.Enabled = False
         'vajutus nupul btnStopp keelab vajutused nupul btnStopp
-        btnStopp.Enabled = False
+        btnStart.Enabled = True
+    End Sub
+
+    Private Sub tekstiPikkus_Click(sender As Object, e As EventArgs) Handles tekstiPikkus.Click
+        tekstiPikkus.Text = Len(txtSisendTekst.Text)
+    End Sub
+
+    Private Sub txtSisendTekst_TextChanged(sender As Object, e As EventArgs) Handles txtSisendTekst.TextChanged
+        tekstiPikkus.Text = Len(txtSisendTekst.Text)
     End Sub
 End Class

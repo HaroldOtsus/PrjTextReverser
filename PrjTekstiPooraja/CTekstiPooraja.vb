@@ -51,4 +51,5 @@
         Implements ITeisendused.pooraTekst
         Return StrReverse(strPooratavTekst)
     End Function
+
 End Class
