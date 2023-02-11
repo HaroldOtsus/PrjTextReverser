@@ -37,6 +37,9 @@ Partial Class formKasutajaAken
         Me.timerUuenda = New System.Windows.Forms.Timer(Me.components)
         Me.tekstiPikkus = New System.Windows.Forms.Label()
         Me.t2isH22likud = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.tekstiPoorajaRadio = New System.Windows.Forms.RadioButton()
+        Me.algoPoorajaRadio = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'ContextMenuStrip1
@@ -160,11 +163,45 @@ Partial Class formKasutajaAken
         Me.t2isH22likud.Size = New System.Drawing.Size(0, 13)
         Me.t2isH22likud.TabIndex = 13
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(237, 9)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(59, 13)
+        Me.Label4.TabIndex = 14
+        Me.Label4.Text = "Klassivalik:"
+        '
+        'tekstiPoorajaRadio
+        '
+        Me.tekstiPoorajaRadio.AutoSize = True
+        Me.tekstiPoorajaRadio.Location = New System.Drawing.Point(313, 5)
+        Me.tekstiPoorajaRadio.Name = "tekstiPoorajaRadio"
+        Me.tekstiPoorajaRadio.Size = New System.Drawing.Size(93, 17)
+        Me.tekstiPoorajaRadio.TabIndex = 15
+        Me.tekstiPoorajaRadio.TabStop = True
+        Me.tekstiPoorajaRadio.Text = "Teksti Pööraja"
+        Me.tekstiPoorajaRadio.UseVisualStyleBackColor = True
+        '
+        'algoPoorajaRadio
+        '
+        Me.algoPoorajaRadio.AutoSize = True
+        Me.algoPoorajaRadio.Location = New System.Drawing.Point(313, 28)
+        Me.algoPoorajaRadio.Name = "algoPoorajaRadio"
+        Me.algoPoorajaRadio.Size = New System.Drawing.Size(119, 17)
+        Me.algoPoorajaRadio.TabIndex = 16
+        Me.algoPoorajaRadio.TabStop = True
+        Me.algoPoorajaRadio.Text = "Algoritmiline Pööraja"
+        Me.algoPoorajaRadio.UseVisualStyleBackColor = True
+        '
         'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(657, 421)
+        Me.Controls.Add(Me.algoPoorajaRadio)
+        Me.Controls.Add(Me.tekstiPoorajaRadio)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.t2isH22likud)
         Me.Controls.Add(Me.tekstiPikkus)
         Me.Controls.Add(Me.btnStopp)
@@ -199,4 +236,7 @@ Partial Class formKasutajaAken
     Friend WithEvents timerUuenda As Timer
     Friend WithEvents tekstiPikkus As Label
     Friend WithEvents t2isH22likud As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents tekstiPoorajaRadio As RadioButton
+    Friend WithEvents algoPoorajaRadio As RadioButton
 End Class
