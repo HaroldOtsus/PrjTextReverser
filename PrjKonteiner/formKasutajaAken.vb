@@ -58,11 +58,21 @@
         btnStart.Enabled = True
     End Sub
 
-    Private Sub tekstiPikkus_Click(sender As Object, e As EventArgs) Handles tekstiPikkus.Click
-        tekstiPikkus.Text = Len(txtSisendTekst.Text)
-    End Sub
-
+    'Kuvab mitmest t2hest sisestatud s6na koosneb
+    'Kuvab mitmest t2ish22likust sisestatud s6na koosneb
     Private Sub txtSisendTekst_TextChanged(sender As Object, e As EventArgs) Handles txtSisendTekst.TextChanged
+        'kuvab kogu s6na pikkuse
         tekstiPikkus.Text = Len(txtSisendTekst.Text)
+
+        'Objekti loomine liidese baasil; referentsmuutuja pooraja deklaratsioon
+        Dim pooraja As PrjTekstiPooraja.ITeisendused
+        'Seadistame referentsmuutuja viitama uuele objektile
+        pooraja = New PrjTekstiPooraja.CTekstiPooraja
+
+        'kuvab t2ish22likud
+        Dim intT2ish22likud As Integer
+        intT2ish22likud = pooraja.loeT2ish22likud(txtSisendTekst.Text)
+
+        t2isH22likud.Text = intT2ish22likud
     End Sub
 End Class

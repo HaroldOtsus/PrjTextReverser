@@ -5,5 +5,6 @@
 
     Function pooraTekst() As String     'liidese meetodid koodi
     Sub teisendaTekst(ByRef strSisendTekst As String)       'ei oma
+    Function loeT2ish22likud(ByVal strSisendTekst As String) As Integer
 
 End Interface

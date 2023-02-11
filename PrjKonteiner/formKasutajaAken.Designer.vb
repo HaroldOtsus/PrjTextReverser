@@ -36,6 +36,7 @@ Partial Class formKasutajaAken
         Me.btnStopp = New System.Windows.Forms.Button()
         Me.timerUuenda = New System.Windows.Forms.Timer(Me.components)
         Me.tekstiPikkus = New System.Windows.Forms.Label()
+        Me.t2isH22likud = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ContextMenuStrip1
@@ -145,17 +146,26 @@ Partial Class formKasutajaAken
         'tekstiPikkus
         '
         Me.tekstiPikkus.AutoSize = True
-        Me.tekstiPikkus.Location = New System.Drawing.Point(396, 77)
+        Me.tekstiPikkus.Location = New System.Drawing.Point(396, 80)
         Me.tekstiPikkus.Name = "tekstiPikkus"
         Me.tekstiPikkus.Size = New System.Drawing.Size(7, 13)
         Me.tekstiPikkus.TabIndex = 12
         Me.tekstiPikkus.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        't2isH22likud
+        '
+        Me.t2isH22likud.AutoSize = True
+        Me.t2isH22likud.Location = New System.Drawing.Point(425, 80)
+        Me.t2isH22likud.Name = "t2isH22likud"
+        Me.t2isH22likud.Size = New System.Drawing.Size(0, 13)
+        Me.t2isH22likud.TabIndex = 13
         '
         'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(657, 421)
+        Me.Controls.Add(Me.t2isH22likud)
         Me.Controls.Add(Me.tekstiPikkus)
         Me.Controls.Add(Me.btnStopp)
         Me.Controls.Add(Me.btnStart)
@@ -188,4 +198,5 @@ Partial Class formKasutajaAken
     Friend WithEvents btnStopp As Button
     Friend WithEvents timerUuenda As Timer
     Friend WithEvents tekstiPikkus As Label
+    Friend WithEvents t2isH22likud As Label
 End Class

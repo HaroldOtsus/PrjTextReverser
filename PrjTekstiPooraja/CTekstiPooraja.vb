@@ -52,4 +52,25 @@
         Return StrReverse(strPooratavTekst)
     End Function
 
+    'Meetod, mis loeb mitu t2is22likut on sisestatud s6nas
+    Private Function loeT2ish22likud(ByVal strSisendTekst As String) As Integer _
+        Implements ITeisendused.loeT2ish22likud
+        't2ish22likute massiiv
+        Dim strT2ish22likud As String = "AEIOUÕÄÖÜaeiouõäöü"
+        'loeb mitu t2ish22likut on s6nas
+        Dim loendur As Integer = 0
+
+        'Ts6kkel v6rdleb sisend stringi ette antud t2ish22likute stringiga ja kui leiab vaste
+        'siis inkrementeerib loendurit 6he v6rra
+        For i As Integer = 0 To Len(strSisendTekst) - 1
+            For j As Integer = 0 To 17
+                If strSisendTekst(i) = strT2ish22likud(j) Then
+                    loendur += 1
+                End If
+            Next
+        Next
+
+        Return loendur
+    End Function
+
 End Class
