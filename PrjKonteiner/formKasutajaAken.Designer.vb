@@ -134,6 +134,7 @@ Partial Class formKasutajaAken
         '
         'btnStopp
         '
+        Me.btnStopp.Enabled = False
         Me.btnStopp.Location = New System.Drawing.Point(526, 243)
         Me.btnStopp.Margin = New System.Windows.Forms.Padding(2)
         Me.btnStopp.Name = "btnStopp"

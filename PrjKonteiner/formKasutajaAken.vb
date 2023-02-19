@@ -36,8 +36,9 @@
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         'vajutus nupul btnStart l6litab taimeri timerUuenda sisse
         timerUuenda.Enabled = True
-        'vajutus nupul btnStart keelab vajutused nupul btnStart
+        'vajutus nupul btnStart keelab vajutused nupul btnStart ja lubab vajutused nupup btnStopp
         btnStart.Enabled = False
+        btnStopp.Enabled = True
     End Sub
 
     Private Sub timerUuenda_Tick(sender As Object, e As EventArgs) Handles timerUuenda.Tick
@@ -58,8 +59,9 @@
     Private Sub btnStopp_Click(sender As Object, e As EventArgs) Handles btnStopp.Click
         'vajutus nupul btnStopp l6litab taimeri timerUuenda v2lja
         timerUuenda.Enabled = False
-        'vajutus nupul btnStopp keelab vajutused nupul btnStopp
+        'vajutus nupul btnStopp keelab vajutused nupul btnStopp ja lubab vajutused nupul btnStart
         btnStart.Enabled = True
+        btnStopp.Enabled = False
     End Sub
 
     'Kuvab mitmest t2hest sisestatud s6na koosneb
