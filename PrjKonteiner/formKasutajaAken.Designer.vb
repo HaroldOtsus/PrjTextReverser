@@ -50,84 +50,77 @@ Partial Class formKasutajaAken
         '
         'txtSisendTekst
         '
-        Me.txtSisendTekst.Location = New System.Drawing.Point(240, 73)
-        Me.txtSisendTekst.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSisendTekst.Location = New System.Drawing.Point(360, 112)
         Me.txtSisendTekst.Name = "txtSisendTekst"
-        Me.txtSisendTekst.Size = New System.Drawing.Size(151, 20)
+        Me.txtSisendTekst.Size = New System.Drawing.Size(224, 26)
         Me.txtSisendTekst.TabIndex = 2
         '
         'txtValjundTekst1
         '
-        Me.txtValjundTekst1.Location = New System.Drawing.Point(240, 192)
-        Me.txtValjundTekst1.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtValjundTekst1.Location = New System.Drawing.Point(360, 295)
         Me.txtValjundTekst1.Name = "txtValjundTekst1"
-        Me.txtValjundTekst1.Size = New System.Drawing.Size(151, 20)
+        Me.txtValjundTekst1.ReadOnly = True
+        Me.txtValjundTekst1.Size = New System.Drawing.Size(224, 26)
         Me.txtValjundTekst1.TabIndex = 3
         '
         'txtValjundTekst2
         '
-        Me.txtValjundTekst2.Location = New System.Drawing.Point(240, 302)
-        Me.txtValjundTekst2.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtValjundTekst2.Location = New System.Drawing.Point(360, 465)
         Me.txtValjundTekst2.Name = "txtValjundTekst2"
-        Me.txtValjundTekst2.Size = New System.Drawing.Size(151, 20)
+        Me.txtValjundTekst2.ReadOnly = True
+        Me.txtValjundTekst2.Size = New System.Drawing.Size(224, 26)
         Me.txtValjundTekst2.TabIndex = 4
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(93, 77)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(140, 118)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(62, 13)
+        Me.Label1.Size = New System.Drawing.Size(93, 20)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Sisendtekst"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(93, 196)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(140, 302)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(123, 13)
+        Me.Label2.Size = New System.Drawing.Size(184, 20)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Pööramine funktsiooniga"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(93, 306)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(140, 471)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(124, 13)
+        Me.Label3.Size = New System.Drawing.Size(187, 20)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Pööramine protseduuriga"
         '
         'btnPoora1
         '
-        Me.btnPoora1.Location = New System.Drawing.Point(240, 243)
-        Me.btnPoora1.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPoora1.Location = New System.Drawing.Point(360, 374)
         Me.btnPoora1.Name = "btnPoora1"
-        Me.btnPoora1.Size = New System.Drawing.Size(151, 32)
+        Me.btnPoora1.Size = New System.Drawing.Size(226, 49)
         Me.btnPoora1.TabIndex = 8
         Me.btnPoora1.Text = "Pööra funktsiooniga"
         Me.btnPoora1.UseVisualStyleBackColor = True
         '
         'btnPoora2
         '
-        Me.btnPoora2.Location = New System.Drawing.Point(240, 345)
-        Me.btnPoora2.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnPoora2.Location = New System.Drawing.Point(360, 531)
         Me.btnPoora2.Name = "btnPoora2"
-        Me.btnPoora2.Size = New System.Drawing.Size(151, 36)
+        Me.btnPoora2.Size = New System.Drawing.Size(226, 55)
         Me.btnPoora2.TabIndex = 9
         Me.btnPoora2.Text = "Pööra protseduuriga"
         Me.btnPoora2.UseVisualStyleBackColor = True
         '
         'btnStart
         '
-        Me.btnStart.Location = New System.Drawing.Point(526, 119)
-        Me.btnStart.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnStart.Location = New System.Drawing.Point(789, 183)
         Me.btnStart.Name = "btnStart"
-        Me.btnStart.Size = New System.Drawing.Size(82, 38)
+        Me.btnStart.Size = New System.Drawing.Size(123, 58)
         Me.btnStart.TabIndex = 10
         Me.btnStart.Text = "Start"
         Me.btnStart.UseVisualStyleBackColor = True
@@ -135,10 +128,9 @@ Partial Class formKasutajaAken
         'btnStopp
         '
         Me.btnStopp.Enabled = False
-        Me.btnStopp.Location = New System.Drawing.Point(526, 243)
-        Me.btnStopp.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnStopp.Location = New System.Drawing.Point(789, 374)
         Me.btnStopp.Name = "btnStopp"
-        Me.btnStopp.Size = New System.Drawing.Size(87, 43)
+        Me.btnStopp.Size = New System.Drawing.Size(130, 66)
         Me.btnStopp.TabIndex = 11
         Me.btnStopp.Text = "Stop"
         Me.btnStopp.UseVisualStyleBackColor = True
@@ -150,26 +142,29 @@ Partial Class formKasutajaAken
         'tekstiPikkus
         '
         Me.tekstiPikkus.AutoSize = True
-        Me.tekstiPikkus.Location = New System.Drawing.Point(396, 80)
+        Me.tekstiPikkus.Location = New System.Drawing.Point(594, 123)
+        Me.tekstiPikkus.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.tekstiPikkus.Name = "tekstiPikkus"
-        Me.tekstiPikkus.Size = New System.Drawing.Size(7, 13)
+        Me.tekstiPikkus.Size = New System.Drawing.Size(9, 20)
         Me.tekstiPikkus.TabIndex = 12
         Me.tekstiPikkus.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         't2isH22likud
         '
         Me.t2isH22likud.AutoSize = True
-        Me.t2isH22likud.Location = New System.Drawing.Point(425, 80)
+        Me.t2isH22likud.Location = New System.Drawing.Point(638, 123)
+        Me.t2isH22likud.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.t2isH22likud.Name = "t2isH22likud"
-        Me.t2isH22likud.Size = New System.Drawing.Size(0, 13)
+        Me.t2isH22likud.Size = New System.Drawing.Size(0, 20)
         Me.t2isH22likud.TabIndex = 13
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(237, 9)
+        Me.Label4.Location = New System.Drawing.Point(356, 14)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 13)
+        Me.Label4.Size = New System.Drawing.Size(84, 20)
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Klassivalik:"
         '
@@ -177,9 +172,10 @@ Partial Class formKasutajaAken
         '
         Me.tekstiPoorajaRadio.AutoSize = True
         Me.tekstiPoorajaRadio.Checked = True
-        Me.tekstiPoorajaRadio.Location = New System.Drawing.Point(313, 5)
+        Me.tekstiPoorajaRadio.Location = New System.Drawing.Point(470, 8)
+        Me.tekstiPoorajaRadio.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.tekstiPoorajaRadio.Name = "tekstiPoorajaRadio"
-        Me.tekstiPoorajaRadio.Size = New System.Drawing.Size(93, 17)
+        Me.tekstiPoorajaRadio.Size = New System.Drawing.Size(134, 24)
         Me.tekstiPoorajaRadio.TabIndex = 15
         Me.tekstiPoorajaRadio.TabStop = True
         Me.tekstiPoorajaRadio.Text = "Teksti Pööraja"
@@ -188,18 +184,19 @@ Partial Class formKasutajaAken
         'algoPoorajaRadio
         '
         Me.algoPoorajaRadio.AutoSize = True
-        Me.algoPoorajaRadio.Location = New System.Drawing.Point(313, 28)
+        Me.algoPoorajaRadio.Location = New System.Drawing.Point(470, 43)
+        Me.algoPoorajaRadio.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.algoPoorajaRadio.Name = "algoPoorajaRadio"
-        Me.algoPoorajaRadio.Size = New System.Drawing.Size(119, 17)
+        Me.algoPoorajaRadio.Size = New System.Drawing.Size(177, 24)
         Me.algoPoorajaRadio.TabIndex = 16
         Me.algoPoorajaRadio.Text = "Algoritmiline Pööraja"
         Me.algoPoorajaRadio.UseVisualStyleBackColor = True
         '
         'formKasutajaAken
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(657, 421)
+        Me.ClientSize = New System.Drawing.Size(986, 648)
         Me.Controls.Add(Me.algoPoorajaRadio)
         Me.Controls.Add(Me.tekstiPoorajaRadio)
         Me.Controls.Add(Me.Label4)
@@ -215,7 +212,6 @@ Partial Class formKasutajaAken
         Me.Controls.Add(Me.txtValjundTekst2)
         Me.Controls.Add(Me.txtValjundTekst1)
         Me.Controls.Add(Me.txtSisendTekst)
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "formKasutajaAken"
         Me.Text = "Tekstitöötlus"
         Me.ResumeLayout(False)
